@@ -1,0 +1,17 @@
+LTTNG Tracing :
+--------------------- 
+http://lttng.org/docs/v2.10/#doc-tracing-your-own-user-application
+Install the main Lttng 2.10 packages:
+apt-get install lttng-modules-dkms
+apt-get install liblttng-ust-dev
+apt-get install lttng-tools
+
+From <http://lttng.org/docs/v2.10/#doc-tracing-your-own-user-application> 
+lttng-sessiond --daemonize
+lttng list --userspace
+lttng create my-user-space-session
+lttng enable-event --userspace com_lsi_adk_ip:lsi_adk_func_entry
+lttng start
+lttng stop
+lttng destroy
+babeltrace ~/lttng-traces/my-user-space-session-20171112-053602
