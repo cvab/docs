@@ -23,6 +23,16 @@ pci@0000:85:00.3  ens260f3      network        Ethernet Controller X710 for 10Gb
                   virbr0-nic    network        Ethernet interface
                   veth_k_adk2   network        Ethernet interface
 
+#lspci -k  /* for detailed info */
+01:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+        Subsystem: Intel Corporation I350 Gigabit Network Connection
+        Kernel driver in use: igb
+        Kernel modules: igb
+03:00.0 Ethernet controller: Intel Corporation 82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)
+        Subsystem: Intel Corporation Ethernet Server Adapter X520-2
+        Kernel driver in use: uio_pci_generic
+        Kernel modules: ixgbe
+
 # ls -l /sys/bus/pci/devices/0000:03:00.0/driver  /* UIO Device */
 lrwxrwxrwx 1 root root 0 Mar 17 03:35 /sys/bus/pci/devices/0000:03:00.0/driver -> ../../../../bus/pci/drivers/uio_pci_generic
 # cat  /sys/bus/pci/devices/0000:03:00.0/numa_node
@@ -63,4 +73,12 @@ L3 cache:              56320K
 NUMA node0 CPU(s):     0-21
 NUMA node1 CPU(s):     22-43
 Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb invpcid_single intel_pt retpoline kaiser tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+
+# grep -R '' /sys/kernel/mm/hugepages/ (OR) /proc/sys/vm/*huge*
+/sys/kernel/mm/hugepages/hugepages-1048576kB/nr_overcommit_hugepages:0
+/sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages:10
+/sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages_mempolicy:10
+/sys/kernel/mm/hugepages/hugepages-1048576kB/surplus_hugepages:0
+/sys/kernel/mm/hugepages/hugepages-1048576kB/resv_hugepages:0
+/sys/kernel/mm/hugepages/hugepages-1048576kB/free_hugepages:0
 
