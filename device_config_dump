@@ -1,0 +1,25 @@
+# lshw -c network -businfo
+Bus info          Device        Class          Description
+==========================================================
+pci@0000:01:00.0  enp1s0f0      network        I350 Gigabit Network Connection
+pci@0000:01:00.1  enp1s0f1      network        I350 Gigabit Network Connection
+pci@0000:03:00.0                network        82599ES 10-Gigabit SFI/SFP+ Network Connection
+pci@0000:03:00.1                network        82599ES 10-Gigabit SFI/SFP+ Network Connection
+pci@0000:0c:00.0  enp12s0f0     network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:0c:00.1  enp12s0f1     network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:0c:00.2  enp12s0f2     network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:0c:00.3  enp12s0f3     network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:81:00.0  ens259f0      network        Ethernet Controller XL710 for 40GbE QSFP+
+pci@0000:81:00.1  ens259f1      network        Ethernet Controller XL710 for 40GbE QSFP+
+pci@0000:83:00.0  ens801f0      network        Ethernet Controller XL710 for 40GbE QSFP+
+pci@0000:83:00.1  ens801f1      network        Ethernet Controller XL710 for 40GbE QSFP+
+pci@0000:85:00.0  ens260f0      network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:85:00.1  ens260f1      network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:85:00.2  ens260f2      network        Ethernet Controller X710 for 10GbE SFP+
+pci@0000:85:00.3  ens260f3      network        Ethernet Controller X710 for 10GbE SFP+
+                  veth_fp_adk2  network        Ethernet interface
+                  veth_k_adk1   network        Ethernet interface
+                  veth_fp_adk1  network        Ethernet interface
+                  virbr0-nic    network        Ethernet interface
+                  veth_k_adk2   network        Ethernet interface
+
