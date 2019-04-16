@@ -17,3 +17,22 @@ Linux Socket Programming - Sean Walton
 Learning Path:Software Architecture Fundamentals - Rachel Roumeliotis
 Pragmatic Software Testing - Rex Black 
 Clean Code - Robert C. Martin
+
+
+https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/#general-advice-on-monitoring-and-tuning-the-linux-networking-stack
+
+
+https://software.intel.com/en-us/vtune-amplifier-cookbook-core-utilization-in-dpdk-apps
+https://software.intel.com/en-us/vtune-amplifier-cookbook-top-down-microarchitecture-analysis-method
+
+Computer Architecture, Henessey & Patterson
+Performance Analysis Guide by David Levinthal: https://software.intel.com/sites/products/collateral/hpc/vtune/performance_analysis_guide.pdf
+Agner Fog web site http://agner.org/optimize/
+Intel® Vtune performance analysis tool
+Intel® 64 and IA-32 Architectures Optimization Reference Manual
+What Every Programmer Should Know About Memory by Ulrich Drepper
+Is Parallel Programming Hard, and if so what can you do about it? By Paul McKenney
+A Top-Down Method for Performance Analysis and Counters Architecture by Ahmad Yasin
+Skylake Microarchitecture events http://oprofile.sourceforge.net/docs/intel-skylake-events.php
+
+
